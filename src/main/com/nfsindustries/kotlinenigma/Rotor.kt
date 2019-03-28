@@ -2,6 +2,7 @@ package com.nfsindustries.kotlinenigma
 
 class Rotor(number: Int) {
 
+    private val charToASCII = 97
     private var position = 0
     private val rotorNo = number
     var wiring = Array(size = 26, init = {0})
@@ -192,8 +193,9 @@ class Rotor(number: Int) {
     }
 
     fun getEncryptedCharFor(original: Char) : Char {
-        val position = original.toLowerCase().toInt() - 97
-        return original
+        val position = original.toLowerCase().toInt() - charToASCII
+        val encryptedChar = (wiring[position] + charToASCII).toChar()
+        return encryptedChar
     }
 
 }

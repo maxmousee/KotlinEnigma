@@ -4,8 +4,7 @@ class Machine() {
     private val firstRotor = Rotor(0)
     private val secondRotor = Rotor(1)
 
-
-    fun turnRotors() {
+    private fun turnRotors() {
         val fullTurn = firstRotor.click()
         if (fullTurn) {
             secondRotor.click()
@@ -13,15 +12,15 @@ class Machine() {
     }
 
     fun encrypt(inputMessage: String) : String {
-        var encryptedMessage = "a"
+        var encryptedMessage = ""
         if (inputMessage.isNullOrEmpty()) {
             return ""
         }
 
-        for (i in 0..inputMessage.length) {
+        for (i in 0 until inputMessage.length) {
             val currentChar = inputMessage.get(i)
-            val enctryptedChar = firstRotor.getEncryptedCharFor(currentChar)
-            encryptedMessage += enctryptedChar
+            val encryptedChar = firstRotor.getEncryptedCharFor(currentChar)
+            encryptedMessage += encryptedChar
             turnRotors()
         }
         return encryptedMessage
