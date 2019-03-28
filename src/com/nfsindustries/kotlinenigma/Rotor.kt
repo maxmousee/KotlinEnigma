@@ -3,8 +3,8 @@ package com.nfsindustries.kotlinenigma
 class Rotor(number: Int) {
 
     private var position = 0
-    private var wiring = Array(size = 26, init = {0})
     private val rotorNo = number
+    var wiring = Array(size = 26, init = {0})
 
     init {
         when (rotorNo) {
@@ -189,6 +189,11 @@ class Rotor(number: Int) {
             position = 0
             return true
         }
+    }
+
+    fun getEncryptedCharFor(original: Char) : Char {
+        val position = original.toLowerCase().toInt() - 97
+        return original
     }
 
 }

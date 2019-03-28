@@ -12,4 +12,19 @@ class Machine() {
         }
     }
 
+    fun encrypt(inputMessage: String) : String {
+        var encryptedMessage = "a"
+        if (inputMessage.isNullOrEmpty()) {
+            return ""
+        }
+
+        for (i in 0..inputMessage.length) {
+            val currentChar = inputMessage.get(i)
+            val enctryptedChar = firstRotor.getEncryptedCharFor(currentChar)
+            encryptedMessage += enctryptedChar
+            turnRotors()
+        }
+        return encryptedMessage
+    }
+
 }
