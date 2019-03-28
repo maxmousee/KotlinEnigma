@@ -13,7 +13,7 @@ class Machine() {
 
     fun encrypt(inputMessage: String) : String {
         var encryptedMessage = ""
-        if (inputMessage.isNullOrEmpty()) {
+        if (inputMessage.isEmpty()) {
             return ""
         }
 
