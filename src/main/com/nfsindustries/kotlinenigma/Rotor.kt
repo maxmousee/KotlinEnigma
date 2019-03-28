@@ -192,10 +192,12 @@ class Rotor(number: Int) {
         }
     }
 
-    fun getEncryptedCharFor(original: Char) : Char {
-        val position = original.toLowerCase().toInt() - charToASCII
-        val encryptedChar = (wiring[position] + charToASCII).toChar()
-        return encryptedChar
+    fun getFirstEncryptedChar() : Char {
+        return (wiring[position] + charToASCII).toChar()
     }
 
+    fun getEncryptedCharFor(original: Char) : Char {
+        val currentCharPosition = original.toLowerCase().toInt() - charToASCII
+        return (wiring[currentCharPosition] + charToASCII).toChar()
+    }
 }

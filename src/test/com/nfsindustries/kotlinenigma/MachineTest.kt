@@ -14,9 +14,27 @@ internal class MachineTest {
         assertNotNull(encrypted)
         assertNotEquals("abc", encrypted)
         assertEquals(3, encrypted.length)
-        assertNotEquals('a', encrypted.get(0))
-        assertNotEquals('b', encrypted.get(1))
-        assertNotEquals('c', encrypted.get(2))
+        println("Encrypted: $encrypted")
+    }
+
+    @Test
+    fun wordEncryption() {
+        val machine = Machine()
+        val encrypted = machine.encrypt("helloworld")
+        assertNotNull(encrypted)
+        assertNotEquals("helloworld", encrypted)
+        assertEquals(10, encrypted.length)
+        println("Encrypted: $encrypted")
+    }
+
+    @Test
+    fun encryptSameChars() {
+        val machine = Machine()
+        val encrypted = machine.encrypt("aaa")
+        assertNotNull(encrypted)
+        assertNotEquals("aaa", encrypted)
+        assertEquals(3, encrypted.length)
+        println("Encrypted: $encrypted")
     }
 
     @Test
@@ -26,10 +44,7 @@ internal class MachineTest {
         assertNotNull(encrypted)
         assertNotEquals("aAzZ", encrypted)
         assertEquals(4, encrypted.length)
-        assertNotEquals('a', encrypted.get(0))
-        assertNotEquals('a', encrypted.get(1))
-        assertNotEquals('z', encrypted.get(2))
-        assertNotEquals('z', encrypted.get(3))
+        println("Encrypted: $encrypted")
     }
 
     @Test

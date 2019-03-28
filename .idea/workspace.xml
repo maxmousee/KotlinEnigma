@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="988a44ae-30ac-4eb9-abe3-7da589d9938d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Machine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Machine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Rotor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Rotor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/nfsindustries/kotlinenigma/MachineTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nfsindustries/kotlinenigma/MachineTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Machine.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="300">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -34,12 +36,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Rotor.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="194" column="51" selection-start-line="194" selection-start-column="51" selection-end-line="194" selection-end-column="51" />
+            <state relative-caret-position="465">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
               <folding>
                 <element signature="e#219#5335#0" />
-                <element signature="n#!!block;n#click#0;n#!!block;n#Rotor#0" />
-                <element signature="n#!!block;n#getEncryptedCharFor#0;n#!!block;n#Rotor#0" />
               </folding>
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/com/nfsindustries/kotlinenigma/MachineTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="330">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -207,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MachineTest">
+  <component name="RunManager" selected="JUnit.RotorTest">
     <configuration name="MachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KotlinEnigma" />
       <extension name="coverage">
@@ -239,6 +239,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MachineTest.encryptSameChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinEnigma" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nfsindustries.kotlinenigma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nfsindustries.kotlinenigma" />
+      <option name="MAIN_CLASS_NAME" value="com.nfsindustries.kotlinenigma.MachineTest" />
+      <option name="METHOD_NAME" value="encryptSameChars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MachineTest.simpleEncryption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KotlinEnigma" />
       <extension name="coverage">
@@ -255,9 +271,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RotorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinEnigma" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nfsindustries.kotlinenigma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nfsindustries.kotlinenigma" />
+      <option name="MAIN_CLASS_NAME" value="com.nfsindustries.kotlinenigma.RotorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RotorTest" />
         <item itemvalue="JUnit.MachineTest" />
+        <item itemvalue="JUnit.MachineTest.encryptSameChars" />
         <item itemvalue="JUnit.MachineTest.encryptBoundaries" />
         <item itemvalue="JUnit.MachineTest.simpleEncryption" />
       </list>
@@ -274,44 +307,44 @@
       <option name="presentableId" value="Default" />
       <updated>1553773441337</updated>
       <workItem from="1553773442726" duration="4187000" />
-      <workItem from="1553779826436" duration="515000" />
+      <workItem from="1553779826436" duration="2144000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MachineTest_simpleEncryption - 2019.03.28 at 13h 49m 19s.xml">
-      <configuration name="MachineTest.simpleEncryption" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MachineTest_simpleEncryption - 2019.03.28 at 13h 50m 47s.xml">
-      <configuration name="MachineTest.simpleEncryption" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MachineTest_simpleEncryption - 2019.03.28 at 13h 51m 01s.xml">
-      <configuration name="MachineTest.simpleEncryption" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MachineTest_simpleEncryption - 2019.03.28 at 13h 51m 36s.xml">
-      <configuration name="MachineTest.simpleEncryption" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MachineTest_encryptBoundaries - 2019.03.28 at 13h 51m 41s.xml">
-      <configuration name="MachineTest.encryptBoundaries" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MachineTest - 2019.03.28 at 13h 54m 05s.xml">
+    <history-entry file="MachineTest - 2019.03.28 at 14h 51m 33s.xml">
       <configuration name="MachineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MachineTest - 2019.03.28 at 14h 34m 05s.xml">
+    <history-entry file="MachineTest - 2019.03.28 at 14h 52m 30s.xml">
       <configuration name="MachineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MachineTest - 2019.03.28 at 14h 34m 53s.xml">
+    <history-entry file="MachineTest - 2019.03.28 at 14h 56m 41s.xml">
       <configuration name="MachineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MachineTest - 2019.03.28 at 14h 35m 18s.xml">
+    <history-entry file="MachineTest - 2019.03.28 at 14h 57m 28s.xml">
       <configuration name="MachineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MachineTest - 2019.03.28 at 14h 37m 44s.xml">
+    <history-entry file="MachineTest - 2019.03.28 at 14h 58m 01s.xml">
+      <configuration name="MachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MachineTest - 2019.03.28 at 14h 59m 56s.xml">
+      <configuration name="MachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MachineTest - 2019.03.28 at 15h 00m 31s.xml">
+      <configuration name="MachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MachineTest - 2019.03.28 at 15h 09m 44s.xml">
+      <configuration name="MachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MachineTest - 2019.03.28 at 15h 10m 57s.xml">
+      <configuration name="MachineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MachineTest - 2019.03.28 at 15h 12m 06s.xml">
       <configuration name="MachineTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4702000" />
+    <option name="totallyTimeSpent" value="6331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1418" extended-state="0" />
@@ -378,25 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Rotor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="194" column="51" selection-start-line="194" selection-start-column="51" selection-end-line="194" selection-end-column="51" />
-          <folding>
-            <element signature="e#219#5335#0" />
-            <element signature="n#!!block;n#click#0;n#!!block;n#Rotor#0" />
-            <element signature="n#!!block;n#getEncryptedCharFor#0;n#!!block;n#Rotor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Machine.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KotlinEnigma.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -404,10 +418,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Machine.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/nfsindustries/kotlinenigma/Rotor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#219#5335#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/nfsindustries/kotlinenigma/MachineTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        <state relative-caret-position="330">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
         </state>
       </provider>
     </entry>

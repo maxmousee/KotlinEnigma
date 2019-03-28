@@ -18,9 +18,9 @@ class Machine() {
         }
 
         for (i in 0 until inputMessage.length) {
-            val currentChar = inputMessage.get(i)
-            val encryptedChar = firstRotor.getEncryptedCharFor(currentChar)
-            encryptedMessage += encryptedChar
+            val firstRotorChar = firstRotor.getFirstEncryptedChar()
+            val secondRotorChar = secondRotor.getEncryptedCharFor(firstRotorChar)
+            encryptedMessage += secondRotorChar
             turnRotors()
         }
         return encryptedMessage
